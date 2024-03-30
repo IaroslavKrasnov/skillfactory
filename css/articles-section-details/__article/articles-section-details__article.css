@@ -1,0 +1,120 @@
+/* Desktop-first - 1440px and more*/
+.articles-section-details__article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-area: article;
+}
+
+.articles-section-details__article_author {
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #494949;
+}
+
+.articles-section-details__article_image > img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    margin-top: 24px;
+}
+
+.articles-section-details__article_list-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    gap: 16px;
+}
+
+.articles-section-details__article_list-content_title {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.articles-section-details__article_list-content_main {
+    padding-left: 16px;
+}
+
+.articles-section-details__article_list-content_main > * {
+    color: #333;
+    cursor: pointer;
+}
+
+
+.articles-section-details__article_list-content_li {
+    list-style: none;
+    padding-left: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;  /* medium */
+}
+
+.articles-section-details__article_list-content_li-green {
+    list-style-image: url(/img/Article/list-style-cycle.svg);
+    padding-left: 0;
+}
+
+.articles-section-details__article_list-content_h3 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.articles-section-details__article_list-content_p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;  /* medium */
+    color: #333;
+}
+
+.articles-section-details__article_list-content_quotes {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 16px;
+    background-color: #F3F7FE;
+    width: 100%;
+    padding: 24px;
+}
+  
+.articles-section-details__article_list-content_quotes_img {
+    display: block;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+}
+
+.articles-section-details__article_list-content_text {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: italic;
+    color: #333;
+}
+
+.articles-section-details__article_list-content_author {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.articles-section-details__article_list-content_image > img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    margin-top: 8px;
+}
+
+.articles-section-details__article_list-content_image_title {
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0.25px;
+    font-weight: 400;
+    color: #868686;
+}

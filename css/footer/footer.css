@@ -1,0 +1,38 @@
+/* Desktop-first - 1440px and more*/
+.footer {
+  grid-area: footer;
+  background-color: #2963A3;
+  display: grid;
+  grid-template-columns: minmax(120px, auto) 1fr minmax(120px, auto);
+  grid-template-areas: '. footer_center .';
+  padding-top: 36px;
+  padding-bottom: 16px;
+}
+
+/* iPad Pro - no less than 1024 pixels, but not more than 1439.98px*/
+@media screen and (min-width: 1024px) and (max-width: 1439.98px) {
+  .footer {
+    grid-template-columns: 32px 1fr 32px;
+  }
+}
+
+/* iPad min - no less than 768 pixels, but not more than 1023.98px*/
+@media screen and (min-width: 768px) and (max-width: 1023.98px) {
+  .footer {
+    grid-template-columns: 20px 1fr 20px;
+  }
+}
+
+/* iPhone 11 - no less than 414 pixels, but not more than 767.98pх*/
+@media screen and (min-width: 414px) and (max-width: 767.98px) {
+  .footer {
+    grid-template-columns: 20px 1fr 20px;
+  }
+}
+
+/* iPhone SE - no more than 413.98px*/
+@media screen and (max-width: 413.98px) {
+  .footer {
+    grid-template-columns: 16px 1fr 16px;
+  }
+}

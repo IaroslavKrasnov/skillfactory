@@ -1,0 +1,6 @@
+.header-line {
+  grid-area: header_line;
+  background-color: #EFF5FB;
+  height: 1px;
+  width: 100%;
+}

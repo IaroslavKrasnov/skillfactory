@@ -1,0 +1,52 @@
+/* Desktop-first - 1440px and more*/
+.articles-section-details {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 1fr;
+    margin-top: 24px;
+    grid-template-areas:
+    "article article article article article article article . . aside aside aside"
+  }
+
+
+/* iPad Pro - no less than 1024 pixels, but not more than 1439.98px*/
+@media screen and (min-width: 1024px) and (max-width: 1439.98px) {
+    .articles-section-details {
+        grid-template-areas:
+        "article article article article article article article article article aside aside aside"
+      }
+  }
+  
+  /* iPad min - no less than 768 pixels, but not more than 1023.98px*/
+  @media screen and (min-width: 768px) and (max-width: 1023.98px) {
+    .articles-section-details {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+      }
+  }
+  
+  /* iPhone 11 - no less than 414 pixels, but not more than 767.98pх*/
+  @media screen and (min-width: 414px) and (max-width: 767.98px) {
+    .articles-section-details {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+      }
+  }
+  
+  /* iPhone SE - no more than 413.98px*/
+  @media screen and (max-width: 413.98px) {
+    .articles-section-details {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+      }
+  }
+  
+  
+  
+  
+  
+  

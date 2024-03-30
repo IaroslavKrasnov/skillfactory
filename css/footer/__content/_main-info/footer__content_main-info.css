@@ -1,0 +1,13 @@
+.footer__content_main-info {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 32px;
+}
+
+/* iPhone SE - no more than 413.98px*/
+@media screen and (max-width: 413.98px) {
+    .footer__content_main-info {
+        row-gap: 24px;
+    }
+}

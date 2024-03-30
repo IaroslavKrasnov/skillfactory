@@ -1,0 +1,21 @@
+.breadcrumbs__item {
+  list-style: none;
+  color: #333333B2;
+  display: flex;
+  gap: 4px;
+  font-size: 12px;
+  line-height: 18px;
+  align-items: center;
+}
+
+/* скрываем последнюю стрелку в бредкрамбсе независимо от количества айтемов в нем */
+.breadcrumbs__item:last-of-type > .breadcrumbs__arrow {
+  display: none;
+}
+
+.breadcrumbs__item:last-of-type {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

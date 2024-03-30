@@ -1,0 +1,20 @@
+/*
+ * Desktop First Styles
+ */
+
+* {
+  color: #333;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,67 @@
+/* Desktop-first - 1440px and more*/
+.layout {
+  display: grid;
+  grid-template-columns: minmax(120px, auto) minmax(1200px, auto) minmax(120px, auto);
+  grid-template-rows: auto 1px 1fr auto;
+  grid-template-areas:
+   ". header ."
+   "header_line header_line header_line"
+   ". content ."
+   "footer footer footer";
+}
+
+/* iPad Pro - no less than 1024 pixels, but not more than 1439.98px*/
+@media screen and (min-width: 1024px) and (max-width: 1439.98px) {
+  .layout {
+    display: grid;
+    grid-template-columns: 32px minmax(960px, auto) 32px;
+    grid-template-rows: auto 1px 1fr auto;
+    grid-template-areas:
+    ". header ."
+    "header_line header_line header_line"
+    ". content ."
+    "footer footer footer";
+  }
+}
+
+/* iPad min - no less than 768 pixels, but not more than 1023.98px*/
+@media screen and (min-width: 768px) and (max-width: 1023.98px) {
+  .layout {
+    display: grid;
+    grid-template-columns: 20px minmax(728px, 959.98px) 20px;
+    grid-template-rows: auto 1px 1fr auto;
+    grid-template-areas:
+    ". header ."
+    "header_line header_line header_line"
+    ". content ."
+    "footer footer footer";
+  }
+}
+
+/* iPhone 11 - no less than 414 pixels, but not more than 767.98pх*/
+@media screen and (min-width: 414px) and (max-width: 767.98px) {
+  .layout {
+    display: grid;
+    grid-template-columns: 20px minmax(374px, 727.98px) 20px;
+    grid-template-rows: auto 1px 1fr auto;
+    grid-template-areas:
+    ". header ."
+    "header_line header_line header_line"
+    ". content ."
+    "footer footer footer";
+  }
+}
+
+/* iPhone SE - no more than 413.98px*/
+@media screen and (max-width: 413.98px) {
+  .layout {
+    display: grid;
+    grid-template-columns: 16px minmax(288px, 373.98px) 16px;
+    grid-template-rows: auto 1px 1fr auto;
+    grid-template-areas:
+    ". header ."
+    "header_line header_line header_line"
+    ". content ."
+    "footer footer footer";
+  }
+}

@@ -1,0 +1,37 @@
+/* Desktop-first - 1440px and more*/
+.header__menu {
+  flex: 1;
+  margin-left: 32px;
+}
+
+.header__menu > ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/* iPad Pro - no less than 1024 pixels, but not more than 1439.98px*/
+@media screen and (min-width: 1024px) and (max-width: 1439.98px) {
+  
+}
+
+/* iPad min - no less than 768 pixels, but not more than 1023.98px*/
+@media screen and (min-width: 768px) and (max-width: 1023.98px) {
+  .header__menu {
+    display: none;
+  }
+}
+
+/* iPhone 11 - no less than 414 pixels, but not more than 767.98pх*/
+@media screen and (min-width: 414px) and (max-width: 767.98px) {
+  .header__menu {
+    display: none;
+  }
+}
+
+/* iPhone SE - no more than 413.98px*/
+@media screen and (max-width: 413.98px) {
+  .header__menu {
+    display: none;
+  }
+}

@@ -1,0 +1,4 @@
+.breadcrumbs > ul {
+  display: flex;
+  gap: 8px;
+}
